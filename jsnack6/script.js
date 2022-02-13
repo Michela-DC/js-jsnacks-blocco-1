@@ -4,19 +4,19 @@
 let array = [];
 const exponent = 3;
 
-// Chiedo all'utente un numero random da 1 a 20
-let firstNumber = parseInt(prompt('Inserisci il primo numero intero:'));
+// Chiedo all'utente di inserire un numero
+let firstNumber = parseInt(prompt('Inserisci un numero maggiore di 1:'));
 console.log(firstNumber);
 
-while(isNaN(firstNumber)){
+while(isNaN(firstNumber) || (firstNumber < 1)){
     console.log(`${firstNumber} non è un numero in cifre`);
-    alert('Devi inserire un numero in CIFRE!')
+    alert('Devi inserire un numero in CIFRE e MAGGIORE di 1!')
     firstNumber = parseInt(prompt('Inserisci il primo numero intero:'));
     console.log(firstNumber);
 }
 
 // Chiedo un secondo numero all'utente che sia minore del primo numero chiesto
-let secondNumber = parseInt(prompt('Inserisci il secondo numero intero minore del numero precedentemente inserito:')); 
+let secondNumber = parseInt(prompt('Inserisci il secondo numero che deve essere minore del numero precedentemente inserito:')); 
 console.log(secondNumber);
 
 while(isNaN(secondNumber) || (secondNumber > firstNumber)){
