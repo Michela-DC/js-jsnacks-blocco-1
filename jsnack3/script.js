@@ -38,7 +38,7 @@ let somma = 0;
 
 while(numbers.length !== 5){ // la condizione è finché la lunghezza dell'array é diversa da 5
     
-    let userNumber = parseFloat(prompt('Inserisci un numero'));
+    let userNumber = parseFloat(prompt(`Inserisci il ${i+1}° numero`));
     console.log(userNumber);
 
     while(isNaN(userNumber)){
